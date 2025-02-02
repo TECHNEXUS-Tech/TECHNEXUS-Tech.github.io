@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNexus</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader">
+    <div class="loader-circle"></div>
+  </div>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">TechNexus</div>
+    <nav>
+      <div class="hamburger">☰</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <span>🌙</span>
+        <span>☀️</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span class="typing"></span></h1>
+      <p>Your gateway to the future of technology.</p>
+      <button class="cta-button">Explore Blogs</button>
+    </div>
+  </section>
+
+  <!-- Article Section -->
+  <section id="blogs" class="articles">
+    <h2>Latest Articles</h2>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search blogs...">
+    </div>
+    <div class="article-slider">
+      <!-- Articles will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <!-- Blog Post Page -->
+  <section id="blog-post" class="blog-post hidden">
+    <button class="back-button">← Back to Blogs</button>
+    <h2 class="post-title"></h2>
+    <img class="post-image" src="" alt="">
+    <p class="post-content"></p>
+    <div class="comments-section">
+      <h3>Comments</h3>
+      <div class="comments"></div>
+      <form id="comment-form">
+        <textarea id="comment" placeholder="Add a comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media">
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+    <p>&copy; 2025 TechNexus. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
